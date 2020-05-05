@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <title>Sistema Gestion de Ingresos</title>
+  </head>
+  <body>
+<!--menu-->
+<%- include('_header')  %>
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4"> </h1>
+ 
+</div>
+
+
+ <div class="container">
+ 
+	
+
+      <div class="row">
+        <div class="col-md-12">
+            <h4 class="mb-3">Registrar entrada</h4>
+            <form class="needs-validation" action="/entrada" method="POST" novalidate>
+              <div class="row">
+                <div class="col-md-12 mb-3">
+                  <label for="vehiculocod">Ingrese Vehiculo</label>
+                  <input type="text" class="form-control" id="vehiculocod" placeholder="Ingrese el vehiculo" value="" required>
+                  <div class="invalid-feedback">
+                    De  ingresar vehiculo
+                  </div>
+                </div>
+               
+                
+              </div>
+        
+        
+              
+              <hr class="mb-12">
+        
+        
+            
+              <hr class="mb-12">
+              <button class="btn btn-primary btn-lg btn-block" type="submit">Guardar</button>
+            </form>
+          </div>  
+      </div>
+
+      <!-- aqui va el footer-->
+      <%- include('_footer') %>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
